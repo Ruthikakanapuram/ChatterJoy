@@ -1,0 +1,18 @@
+create NPM project
+
+create index,css,js files
+
+install dependencies,express,nodemon
+
+create a express server(Server.js)
+
+do frontend part
+
+install socket.io,setup in server.js adn client client.js
+
+client send message logic in client.js
+
+receive message on server and broadcast in all clients
+
+//to run the applicarion type in terminal "npm run dev"
+//Socket.IO is a library that enables real-time, bidirectional and event-based communication between the browser and the server. 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/emojipicker.css">
+</head>
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/wassup.png" alt=""/>
+            <h1>ChatRoom</h1>
+        </div>
+        <div class="message__area">
+            
+        </div>
+
+        <div class="textarea-container">
+            <div style="position: relative;">
+                <textarea id="textarea" cols="30" rows="1" placeholder="Type Your Message"></textarea>
+                <button class="btn1">😀</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+    <script src="/Emoji.js"></script>
+    <script>
+        new EmojiPicker({
+            trigger:[
+            {
+                insertInto:['#textarea'],
+                selector:'.btn1'
+            }
+            ],
+            closeButton:true,
+            dragButton:true
+        })
+    </script>
+</body>
+</html>
+
